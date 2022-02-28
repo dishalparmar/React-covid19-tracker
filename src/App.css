@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.app-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between; /* This is the children inside this flex box (.app-header) i.e. the heading and the dropdown */
+}
+.app-header h1 {
+  color: #fc3c3c;
+  font-size: 2rem;
+}
+.app-dropdown {
+  background-color: #ffffff;
+}
+.app-left {
+  flex: 0.9;
+}
+.app-right-new-cases {
+  margin: 20px 0;
+}
+.app-right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.app-right div {
+  flex-grow: 1;
+}
+.app-stats {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+  .app-right {
+    margin-top: 20px;
+  }
+}
